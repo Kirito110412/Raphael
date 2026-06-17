@@ -1,0 +1,18 @@
+# System Settings
+api_port: 8000
+timezone: "Asia/Kolkata"
+currency: "INR"
+
+# Model paths and endpoints
+models:
+  local: "models/llm/placeholder.gguf"
+  cloud_primary: "claude-3-5-sonnet-20240620" # LiteLLM syntax
+  vision: "models/vision/qwen3-vl"
+  stt: "models/whisper/hinglish_ft"
+  tts_everyday: "models/tts/kokoro-82m"
+  tts_emotion: "models/tts/coqui-xtts"
+
+# Background runtime intervals
+intervals:
+  proactive_monitor: 3600 # 1 hour
+  sleep_idle_timeout: 1800 # 30 minutes

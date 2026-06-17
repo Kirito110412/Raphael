@@ -1,0 +1,37 @@
+# Ignore model weights
+models/
+
+# Ignore health records
+vault/health/
+
+# Ignore networkx graph serialisation
+*.pkl
+
+# Ignore environment variables
+.env
+
+# Ignore voice fingerprint index
+config/VOICE_PROFILES.md
+
+# Ignore face encodings
+vault/people/*_face.pkl
+
+# (Explicitly NOT ignoring vault/security/authorizations/ as per DEC-050)
+
+# Python standard ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.DS_Store

@@ -1,0 +1,76 @@
+# Orchestration
+langgraph
+langchain-core
+
+# LLM Inference
+llama-cpp-python
+litellm
+unsloth
+peft
+transformers
+
+# Memory
+rank-bm25
+networkx
+python-frontmatter
+gitpython
+filelock
+pyyaml
+
+# Routing and Intent
+semantic-router
+guardrails-ai
+
+# Speech
+openai-whisper
+kokoro-onnx
+TTS
+sounddevice
+pvporcupine
+
+# Vision and Actuation
+Pillow
+pyautogui
+human-mouse
+browser-use
+pytesseract
+face-recognition
+pyannote.audio
+
+# Skills and Sandboxing
+docker
+pytest
+fastmcp
+mcp
+
+# API and Interface
+fastapi
+uvicorn
+pystray
+python-telegram-bot
+
+# Security and PII
+presidio-analyzer
+presidio-anonymizer
+semgrep
+
+# Intelligence and Analysis
+dowhy
+causalpy
+scipy
+numpy
+
+# Observability
+langfuse
+opentelemetry-api
+opentelemetry-sdk
+
+# Utilities
+psutil
+python-dotenv
+httpx
+aiofiles
+schedule
+
+# [IMPLEMENTATION_DETAIL: evaluate Tortoise-TTS, XTTS-v2, or Bark for voice cloning — select based on quality/speed tradeoff on target hardware at build time]
+# [IMPLEMENTATION_DETAIL: evaluate pjsua2, aiortc, or Twilio SDK — select based on platform and free tier availability at build time]
