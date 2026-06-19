@@ -20,18 +20,23 @@ vault/people/*_face.pkl
 
 # Python standard ignores
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
-env.bak/
-venv.bak/
+*.py[cod]
+*$py.class
 .pytest_cache/
 .coverage
 htmlcov/
 .mypy_cache/
 .ruff_cache/
 .DS_Store
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Project specifics
+run_tests.sh
