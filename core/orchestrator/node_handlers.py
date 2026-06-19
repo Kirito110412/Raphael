@@ -1,7 +1,9 @@
 from core.orchestrator.state_schema import ProjectState
+from core.orchestrator.router import classify_intent, get_complexity_score
 
 def node_extract_intent(state: ProjectState) -> ProjectState:
-    # Stub for semantic router intent classification
+    text = state.get("user_input", "")
+    state["intent"] = classify_intent(text)
     return state
 
 def node_retrieve_memory(state: ProjectState) -> ProjectState:
@@ -13,7 +15,13 @@ def node_check_intelligence_preserve(state: ProjectState) -> ProjectState:
     return state
 
 def node_route_task(state: ProjectState) -> ProjectState:
-    # Stub for complexity routing
+    text = state.get("user_input", "")
+    state["complexity_score"] = get_complexity_score(text)
+
+    # Map intent to routed agent
+    intent = state.get("intent", "conversation")
+    state["routed_agent"] = intent
+
     return state
 
 def node_hitl_gate(state: ProjectState) -> ProjectState:
