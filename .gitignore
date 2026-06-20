@@ -1,14 +1,45 @@
-*
-!*/
-!*.py
-!*.md
-!*.txt
-!*.yaml
-!*.yml
-!*.json
-!*.Dockerfile
-!*.toml
-!*.sh
-!.env.example
-!.gitignore
-!.gitkeep
+# Ignore model weights
+models/
+
+# Ignore health records
+vault/health/
+
+# Ignore networkx graph serialisation
+*.pkl
+
+# Ignore environment variables
+.env
+
+# Ignore voice fingerprint index
+config/VOICE_PROFILES.md
+
+# Ignore face encodings
+vault/people/*_face.pkl
+
+# (Explicitly NOT ignoring vault/security/authorizations/ as per DEC-050)
+
+# Python standard ignores
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Project specifics
+run_tests.sh
+test_runner.py
+run_phase3.py
+test_phase5.py
