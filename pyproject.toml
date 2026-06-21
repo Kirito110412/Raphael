@@ -1,0 +1,64 @@
+[project]
+name = "MyAI" # This is a placeholder; actual name is read from config/project_name.txt
+version = "1.0.0"
+description = "Personal AI Operating System"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph",
+    "langchain-core",
+    "llama-cpp-python",
+    "litellm",
+    "unsloth",
+    "peft",
+    "transformers",
+    "rank-bm25",
+    "networkx",
+    "python-frontmatter",
+    "gitpython",
+    "filelock",
+    "pyyaml",
+    "semantic-router",
+    "guardrails-ai",
+    "openai-whisper",
+    "kokoro-onnx",
+    "TTS",
+    "sounddevice",
+    "pvporcupine",
+    "Pillow",
+    "pyautogui",
+    "human-mouse",
+    "browser-use",
+    "pytesseract",
+    "face-recognition",
+    "pyannote.audio",
+    "docker",
+    "pytest",
+    "fastmcp",
+    "mcp",
+    "fastapi",
+    "uvicorn",
+    "pystray",
+    "python-telegram-bot",
+    "presidio-analyzer",
+    "presidio-anonymizer",
+    "semgrep",
+    "dowhy",
+    "causalpy",
+    "scipy",
+    "numpy",
+    "langfuse",
+    "opentelemetry-api",
+    "opentelemetry-sdk",
+    "psutil",
+    "python-dotenv",
+    "httpx",
+    "aiofiles",
+    "schedule"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+managed = true

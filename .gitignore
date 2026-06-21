@@ -1,0 +1,14 @@
+*
+!*/
+!*.py
+!*.md
+!*.txt
+!*.yaml
+!*.yml
+!*.json
+!*.Dockerfile
+!*.toml
+!*.sh
+!.env.example
+!.gitignore
+!.gitkeep
